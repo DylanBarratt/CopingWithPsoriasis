@@ -11,4 +11,4 @@ The site consists of a front-end (Written in ReactJS) to display the blog posts 
 <br />
 The site can be viewed live at <a href="https://copingwithpsoriasis.com/">copingwithpsoriasis.com</a>
 
-Note: the .ENV file is missing so the code cannot be used to replicate the site without creating a new one.
+<b> Note: the .ENV file is missing so the code cannot be used to replicate the site without creating a new one. </b>
