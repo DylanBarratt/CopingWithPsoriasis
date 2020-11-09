@@ -1,0 +1,13 @@
+#mc_embed_signup {
+    background-color: var(--theme-complimentary);
+    padding: 2.5%;
+    margin-top: 10%;
+}
+
+#mc-embedded-subscribe {
+    background-color: var(--theme-purple) !important;
+}
+
+#mc-embedded-subscribe:hover {
+    background-color: var(--theme-light-purple) !important;
+}

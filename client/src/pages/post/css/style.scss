@@ -1,0 +1,97 @@
+.postMain {
+    --main-margin: 25%;
+
+    margin-top: 7.5%;
+
+    .title {
+        margin-left: var(--main-margin);
+        margin-right: var(--main-margin);
+        margin-top: 5%;
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            font-weight: 300;
+            font-size: 28px;
+        }
+
+        h4 {
+            font-weight: 300;
+            font-style: oblique;
+            font-size: 14px;
+        }
+
+        h3 {
+            color: rgba(0, 0, 0, 0.609);
+            font-weight: 300;
+        }
+
+        .react-share__ShareButton {
+            padding: 0.5% !important;
+        }
+    }
+
+    img {
+        width: calc(100% - var(--main-margin) * 2);
+        margin-left: var(--main-margin);
+
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #videoContainer {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        margin-bottom: calc(-56.25% + calc(100% - calc(var(--main-margin) * 2)) / 1.5);
+        margin-top: 5%;
+        height: 0;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% - calc(var(--main-margin) * 2));
+            height: calc(100% - calc(var(--main-margin) * 2));
+            margin-left: var(--main-margin);
+        }
+    }
+
+    .postBody {
+        * {
+            color: black !important;
+        }
+
+        margin-left: var(--main-margin);
+        margin-right: var(--main-margin);
+
+        padding-bottom: 5%;
+
+        word-wrap: break-word;
+
+        p {
+            font-size: 17px;
+        }
+
+        ol {
+            li {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .postMain {
+        --main-margin: 12.5%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .postBody {
+        p {
+            font-size: 16px !important;
+        }
+    }
+}

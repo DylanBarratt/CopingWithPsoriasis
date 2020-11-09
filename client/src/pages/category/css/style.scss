@@ -1,0 +1,51 @@
+.postsMain {
+    h1 {
+        font-size: 42px;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    #postCardGrid {
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+
+        place-items: center;
+        gap: 50px;
+    }
+
+    .hidden {
+        visibility: hidden;
+        order: 99999;
+
+        min-height: 0px !important;
+        min-width: 0px !important;
+        height: 0px !important;
+        width: 0px !important;
+        padding: 0px !important;
+        margin: 0px !important;
+
+        * {
+            height: 0px !important;
+            width: 0px !important;
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+    }
+
+    .categoryControls {
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+
+        text-align: center;
+
+        #searchBox {
+            height: 35px;
+            width: calc(30% + 30px);
+            border-radius: 10px;
+            border: 1px solid var(--theme-light-purple);
+            text-indent: 5px;
+        }
+    }
+}

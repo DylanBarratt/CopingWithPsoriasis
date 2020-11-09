@@ -1,0 +1,152 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+
+    width: 100%;
+
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+
+    padding-top: 1%;
+    padding-bottom: 2%;
+
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+    box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.356);
+
+    #title {
+        margin-left: 5%;
+
+        a {
+            text-decoration: none;
+            color: var(--theme-purple);
+        }
+    }
+
+    h1 {
+        margin-bottom: 0%;
+        font-weight: 300;
+        font-size: 38px;
+        width: 100%;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .burgerContainer {
+        z-index: 2;
+        cursor: pointer;
+        float: right;
+        margin-right: 5%;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+}
+
+header .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header .change .bar2 {
+    opacity: 0;
+}
+
+header .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#nav {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+
+    #navContent {
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        place-items: center;
+
+        ul {
+            list-style: none;
+
+            display: grid !important;
+            place-items: center;
+
+            li {
+                cursor: pointer;
+                font-weight: 200;
+                font-size: 36px;
+                margin-bottom: 5%;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    color: grey;
+                }
+            }
+        }
+    }
+}
+
+.navShow {
+    display: block !important;
+}
+
+@media only screen and (max-width: 500px) {
+    header #title h1 {
+        font-size: 30px;
+    }
+
+    header #title h2 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header #title h1 {
+        font-size: 25px;
+    }
+
+    header #title h2 {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    header #title h1 {
+        font-size: 20px;
+    }
+
+    header #title h2 {
+        font-size: 10px;
+    }
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap");
+
+.homeMain {
+    .one {
+        width: 95%;
+
+        margin-left: 2.5%;
+
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+
+            margin-bottom: -10%;
+            overflow: hidden;
+
+            iframe {
+                position: absolute;
+
+                top: 0;
+                left: 0;
+
+                width: 60%;
+                height: 60%;
+
+                margin-left: 20%;
+                padding-top: 5vh;
+            }
+        }
+
+        .descriptiveText {
+            place-self: center;
+            line-height: 1.5;
+        }
+    }
+
+    .two {
+        margin-top: calc(2.5% + 25px);
+
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .homeMain {
+        .one {
+            grid-template-columns: 1fr;
+
+            margin-bottom: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .homeMain {
+        .one {
+            .videoWrapper {
+                margin-bottom: 0% !important;
+            }
+
+            .videoWrapper iframe {
+                position: absolute;
+
+                top: 0;
+                left: 0;
+
+                width: 80%;
+                height: 80%;
+
+                margin-left: 10%;
+                padding-top: 25px;
+            }
+
+            .descriptiveText {
+                width: 80%;
+            }
+        }
+
+        .two {
+            .postCardText {
+                padding-bottom: 10% !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.notFoundMain {
+    display: grid;
+    place-items: center;
+
+    height: 400px;
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+.notFoundMain a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.notFoundMain a:hover {
+    color: rgb(51, 51, 51);
+}
